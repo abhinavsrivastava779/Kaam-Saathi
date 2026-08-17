@@ -5,7 +5,10 @@ const path = require('path');
 const connectDB = require('./config/db');
 const errorHandler = require('./middleware/errorHandler');
 
-// Load environment variables
+// ========================================
+// Load Environment Variables
+// ========================================
+
 dotenv.config({
   path: path.join(__dirname, '../.env')
 });
@@ -15,6 +18,7 @@ const app = express();
 // ========================================
 // Database
 // ========================================
+
 connectDB();
 
 // ========================================
@@ -22,31 +26,43 @@ connectDB();
 // ========================================
 
 const allowedOrigins = [
+  'https://kaam-saathi.netlify.app',
   'https://heroic-madeleine-f5cba5.netlify.app'
 ];
 
+// Add FRONTEND_URL from Render Environment Variables if present
+if (process.env.FRONTEND_URL) {
+  allowedOrigins.push(process.env.FRONTEND_URL);
+}
+
 const corsOptions = {
   origin: function (origin, callback) {
-    // Allow requests without an Origin header
-    // (Postman, server-to-server requests, etc.)
+
+    // Allow requests without Origin
+    // Postman / server-to-server requests
     if (!origin) {
       return callback(null, true);
     }
 
-    // Allow local development
+    // Allow localhost development
     if (
       /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)
     ) {
       return callback(null, true);
     }
 
-    // Allow deployed frontend
+    // Allow production frontend
     if (allowedOrigins.includes(origin)) {
       return callback(null, true);
     }
 
-    // Reject unknown origins
-    return callback(new Error('Not allowed by CORS'));
+    console.warn('========================================');
+    console.warn('CORS BLOCKED ORIGIN:', origin);
+    console.warn('========================================');
+
+    return callback(
+      new Error(`Not allowed by CORS: ${origin}`)
+    );
   },
 
   credentials: true,
@@ -69,8 +85,14 @@ const corsOptions = {
   optionsSuccessStatus: 204
 };
 
-// Apply CORS before routes
+// ========================================
+// Apply CORS BEFORE API ROUTES
+// ========================================
+
 app.use(cors(corsOptions));
+
+// Explicit OPTIONS / Preflight handling
+app.options('*', cors(corsOptions));
 
 // ========================================
 // Body Parsers
@@ -163,8 +185,18 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log('\n========================================');
-  console.log('🚀 Kaam Saathi Backend API Server Running');
+  console.log('');
+  console.log('========================================');
+  console.log('🚀 Kaam Saathi Backend API Server');
+  console.log('========================================');
   console.log(`📍 Port: ${PORT}`);
-  console.log('========================================\n');
+  console.log('');
+  console.log('Allowed Frontend Origins:');
+
+  allowedOrigins.forEach((origin) => {
+    console.log(`✅ ${origin}`);
+  });
+
+  console.log('========================================');
+  console.log('');
 });
