@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function MissedCall() {
   const navigate = useNavigate();
-  const missedCallNumber = '+919876543211';
+  const missedCallNumber = '+918533860377';
 
   const [simulating, setSimulating] = useState(false);
   const [successMsg, setSuccessMsg] = useState('');
@@ -13,7 +13,7 @@ export default function MissedCall() {
   const handleSimulateMissedCall = async () => {
     setSimulating(true);
     try {
-      const res = await triggerCallback('+919876543211');
+      const res = await triggerCallback('+918533860377');
       setSuccessMsg(res.message);
       setTimeout(() => {
         navigate('/ivr');
