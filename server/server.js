@@ -26,7 +26,7 @@ connectDB();
 // ========================================
 
 const allowedOrigins = [
-  'https://kaam-saathi.netlify.app',
+  'https://kaammanch.netlify.app',
   'https://heroic-madeleine-f5cba5.netlify.app'
 ];
 
