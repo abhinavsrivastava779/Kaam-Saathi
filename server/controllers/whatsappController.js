@@ -199,7 +199,7 @@ exports.processMessage = async (req, res, next) => {
         );
 
         responseStep = 'COMPLETED';
-        replyMessage = `🎉 आपका प्रोफाइल काम मंची पर बन गया है!\n\nनाम: ${worker.name}\nमोबाइल: ${worker.phone}\nकाम: ${worker.skill}\nदिहाड़ी: ₹${worker.dailyRate}\nइलाका: ${locationLabel(worker.area, worker.city)}\n⭐ रेटिंग: नई प्रोफाइल`;
+        replyMessage = `🎉 आपका प्रोफाइल काम मंच पर बन गया है!\n\nनाम: ${worker.name}\nमोबाइल: ${worker.phone}\nकाम: ${worker.skill}\nदिहाड़ी: ₹${worker.dailyRate}\nइलाका: ${locationLabel(worker.area, worker.city)}\n⭐ रेटिंग: नई प्रोफाइल`;
         break;
       }
 

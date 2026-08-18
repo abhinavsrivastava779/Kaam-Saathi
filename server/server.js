@@ -118,7 +118,7 @@ app.use(
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     status: 'OK',
-    appName: 'Kaam Manch (काम मंची)',
+    appName: 'Kaam Manch (काम मंच)',
     timestamp: new Date().toISOString()
   });
 });

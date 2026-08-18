@@ -30,7 +30,7 @@ export default function AdminLogin() {
             <ShieldCheck className="w-9 h-9 text-blue-400" />
           </div>
           <h1 className="text-2xl font-black text-white">Admin Login</h1>
-          <p className="text-xs text-slate-400">काम मंची प्रबंधन पैनल</p>
+          <p className="text-xs text-slate-400">काम मंच प्रबंधन पैनल</p>
         </div>
         {error && <div className="rounded-xl bg-rose-950/60 border border-rose-700 p-3 text-sm text-rose-200">{error}</div>}
         <label className="block">

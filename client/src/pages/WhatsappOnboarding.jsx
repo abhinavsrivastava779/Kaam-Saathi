@@ -11,7 +11,7 @@ export default function WhatsappOnboarding() {
   const [messages, setMessages] = useState([
     {
       sender: 'bot',
-      text: 'नमस्ते! काम मंची में आपका स्वागत है। Chatbot से ID बनाने के लिए अपना मोबाइल नंबर बताएं।'
+      text: 'नमस्ते! काम मंच में आपका स्वागत है। Chatbot से ID बनाने के लिए अपना मोबाइल नंबर बताएं।'
     }
   ]);
   const [userInput, setUserInput] = useState('');
@@ -109,7 +109,7 @@ export default function WhatsappOnboarding() {
         <div className="bg-emerald-950 p-3.5 border-b border-slate-700 flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xl">🤖</div>
           <div>
-            <h3 className="text-sm font-extrabold text-white">काम मंची ID Bot (Demo)</h3>
+            <h3 className="text-sm font-extrabold text-white">काम मंच ID Bot (Demo)</h3>
             <span className="text-[10px] text-emerald-400 font-bold block">
               ● ऑनलाइन • Location + Voice enabled
             </span>

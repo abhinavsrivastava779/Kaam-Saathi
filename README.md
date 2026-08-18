@@ -1,6 +1,6 @@
 # काम मंच | Kaam Manch — Hyperlocal Labor Marketplace
 
-**Kaam Manch (काम मंची)** is a hyperlocal labor marketplace designed specifically to connect daily-wage workers (मज़दूर) with nearby employers. Built mobile-first, Hindi-first (Devanagari UI), icon-driven, and optimized for low-literacy users, it enables frictionless hiring without complex job forms or compulsory employer authentication.
+**Kaam Manch (काम मंच)** is a hyperlocal labor marketplace designed specifically to connect daily-wage workers (मज़दूर) with nearby employers. Built mobile-first, Hindi-first (Devanagari UI), icon-driven, and optimized for low-literacy users, it enables frictionless hiring without complex job forms or compulsory employer authentication.
 
 ---
 

@@ -25,7 +25,7 @@ export default function Home() {
           <span className="text-5xl select-none">👷</span>
         </div>
         <h1 className="text-3xl font-black text-white tracking-tight leading-none">
-          काम मंची
+          काम मंच
         </h1>
         <p className="text-base font-bold text-emerald-400 tracking-wide">
           {t('काम और मज़दूर, दोनों आसानी से खोजें')}
