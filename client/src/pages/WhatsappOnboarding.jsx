@@ -11,7 +11,7 @@ export default function WhatsappOnboarding() {
   const [messages, setMessages] = useState([
     {
       sender: 'bot',
-      text: 'नमस्ते! काम साथी में आपका स्वागत है। Chatbot से ID बनाने के लिए अपना मोबाइल नंबर बताएं।'
+      text: 'नमस्ते! काम मंची में आपका स्वागत है। Chatbot से ID बनाने के लिए अपना मोबाइल नंबर बताएं।'
     }
   ]);
   const [userInput, setUserInput] = useState('');
@@ -20,7 +20,7 @@ export default function WhatsappOnboarding() {
 
   const handleStartRealWhatsapp = () => {
     const number = String(import.meta.env.VITE_WHATSAPP_NUMBER || '918533860377').replace(/\D/g, '');
-    const message = 'Namaste Kaam Saathi 👋\nMujhe Kaam Saathi par ID banani hai.';
+    const message = 'Namaste Kaam Manch 👋\nMujhe Kaam Manch par ID banani hai.';
     const url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
@@ -91,7 +91,7 @@ export default function WhatsappOnboarding() {
         <div className="space-y-1">
           <h2 className="text-xl font-black text-white">📱 WhatsApp से ID बनाएं</h2>
           <p className="text-xs font-semibold text-slate-300">
-            WhatsApp पर सीधे बात करके अपनी Kaam Saathi ID बनाएं। नीचे वाला simulator केवल demo/testing के लिए है।
+            WhatsApp पर सीधे बात करके अपनी Kaam Manch ID बनाएं। नीचे वाला simulator केवल demo/testing के लिए है।
           </p>
         </div>
 
@@ -109,7 +109,7 @@ export default function WhatsappOnboarding() {
         <div className="bg-emerald-950 p-3.5 border-b border-slate-700 flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xl">🤖</div>
           <div>
-            <h3 className="text-sm font-extrabold text-white">काम साथी ID Bot (Demo)</h3>
+            <h3 className="text-sm font-extrabold text-white">काम मंची ID Bot (Demo)</h3>
             <span className="text-[10px] text-emerald-400 font-bold block">
               ● ऑनलाइन • Location + Voice enabled
             </span>

@@ -134,7 +134,7 @@ exports.searchLocation = async (req, res, next) => {
     }
 
     const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&addressdetails=1&countrycodes=in&q=${encodeURIComponent(q)}`;
-    const response = await fetch(url, { headers: { 'User-Agent': 'Kaam-Saathi-SIH-2026/1.0' } });
+    const response = await fetch(url, { headers: { 'User-Agent': 'Kaam-manch-SIH-2026/1.0' } });
     if (!response.ok) throw new Error(`Location search service returned ${response.status}`);
     const data = await response.json();
     if (!data.length) {
@@ -178,7 +178,7 @@ exports.reverseGeocode = async (req, res, next) => {
     const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${encodeURIComponent(lat)}&lon=${encodeURIComponent(lon)}&zoom=18&addressdetails=1`;
     const response = await fetch(url, {
       headers: {
-        'User-Agent': 'Kaam-Saathi-SIH-2026/1.0'
+        'User-Agent': 'Kaam-manch-SIH-2026/1.0'
       }
     });
 

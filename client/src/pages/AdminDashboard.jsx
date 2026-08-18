@@ -100,7 +100,7 @@ export default function AdminDashboard() {
       <div className="rounded-3xl p-5 border border-blue-500/30 bg-gradient-to-br from-slate-900 to-blue-950/40 shadow-2xl">
         <div className="flex items-center justify-between gap-3">
           <div>
-            <p className="text-[10px] uppercase tracking-widest text-blue-400 font-black">KAAM SAATHI ADMIN</p>
+            <p className="text-[10px] uppercase tracking-widest text-blue-400 font-black">Kaam Manch ADMIN</p>
             <h2 className="text-2xl font-black text-white flex items-center gap-2"><Shield className="w-6 h-6 text-blue-400"/>Control Center</h2>
             <p className="text-xs text-slate-400 mt-1">मजदूर, लोकेशन और प्लेटफॉर्म analytics प्रबंधित करें</p>
           </div>

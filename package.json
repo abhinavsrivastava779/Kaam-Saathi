@@ -1,7 +1,7 @@
 {
-  "name": "kaam-saathi",
+  "name": "kaam-manch",
   "version": "1.0.0",
-  "description": "Kaam Saathi (काम साथी) - Hyperlocal Labor Marketplace connecting daily-wage workers with employers",
+  "description": "Kaam Manch (काम मंची) - Hyperlocal Labor Marketplace connecting daily-wage workers with employers",
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
     "server": "npm run dev --prefix server",

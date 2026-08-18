@@ -21,7 +21,7 @@ export default function AIChat() {
       const name = worker?.name || employer?.name || '';
       setMessages([{
         role: 'assistant',
-        content: `Namaste ${name ? name + ' 👋' : '👋'}! Main Kaam Saathi AI hoon. Aap Hinglish me mujhse worker, KYC, availability, registration ya app ke baare me pooch sakte ho.`
+        content: `Namaste ${name ? name + ' 👋' : '👋'}! Main Kaam Manch AI hoon. Aap Hinglish me mujhse worker, KYC, availability, registration ya app ke baare me pooch sakte ho.`
       }]);
     }
   }, [loggedIn]);
@@ -49,7 +49,7 @@ export default function AIChat() {
             <Bot className="w-11 h-11 text-emerald-400" />
           </div>
           <div>
-            <h1 className="text-2xl font-black text-white">🤖 Kaam Saathi AI</h1>
+            <h1 className="text-2xl font-black text-white">🤖 Kaam Manch AI</h1>
             <p className="text-sm text-slate-400 mt-2">
               AI Chatbot use karne se pehle mobile OTP se login zaroori hai.
             </p>
@@ -131,7 +131,7 @@ export default function AIChat() {
           <Bot className="w-6 h-6 text-white" />
         </div>
         <div>
-          <h1 className="font-black text-white">Kaam Saathi AI</h1>
+          <h1 className="font-black text-white">Kaam Manch AI</h1>
           <p className="text-[10px] text-emerald-400 font-bold">● Online • Hinglish support</p>
         </div>
       </div>

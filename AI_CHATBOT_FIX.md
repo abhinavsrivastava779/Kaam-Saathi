@@ -1,4 +1,4 @@
-# Kaam Saathi AI Chatbot Fix
+# Kaam Manch AI Chatbot Fix
 
 The AI chatbot flow was fixed so that:
 

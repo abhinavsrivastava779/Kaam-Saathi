@@ -1,4 +1,4 @@
-# Hanu OTP setup for Kaam Saathi
+# Hanu OTP setup for Kaam Manch
 
 The project now supports Hanu OTP's **without-DLT SMS OTP** API.
 
@@ -27,7 +27,7 @@ node server.js
 
 ## 4. Test
 
-Enter a 10-digit Indian mobile number in Kaam Saathi and press **Send OTP**. The backend generates the 4-digit OTP, sends it through Hanu, and stores the same OTP in MongoDB for verification.
+Enter a 10-digit Indian mobile number in Kaam Manch and press **Send OTP**. The backend generates the 4-digit OTP, sends it through Hanu, and stores the same OTP in MongoDB for verification.
 
 The Hanu endpoint configured by this project is:
 

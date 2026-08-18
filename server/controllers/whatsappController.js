@@ -26,7 +26,7 @@ const findPlace = async (query) => {
 
   const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&addressdetails=1&countrycodes=in&q=${encodeURIComponent(q)}`;
   const response = await fetch(url, {
-    headers: { 'User-Agent': 'Kaam-Saathi-SIH-2026/1.0' }
+    headers: { 'User-Agent': 'Kaam-Manch-SIH-2026/1.0' }
   });
 
   if (!response.ok) return null;
@@ -199,7 +199,7 @@ exports.processMessage = async (req, res, next) => {
         );
 
         responseStep = 'COMPLETED';
-        replyMessage = `🎉 आपका प्रोफाइल काम साथी पर बन गया है!\n\nनाम: ${worker.name}\nमोबाइल: ${worker.phone}\nकाम: ${worker.skill}\nदिहाड़ी: ₹${worker.dailyRate}\nइलाका: ${locationLabel(worker.area, worker.city)}\n⭐ रेटिंग: नई प्रोफाइल`;
+        replyMessage = `🎉 आपका प्रोफाइल काम मंची पर बन गया है!\n\nनाम: ${worker.name}\nमोबाइल: ${worker.phone}\nकाम: ${worker.skill}\nदिहाड़ी: ₹${worker.dailyRate}\nइलाका: ${locationLabel(worker.area, worker.city)}\n⭐ रेटिंग: नई प्रोफाइल`;
         break;
       }
 

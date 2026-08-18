@@ -118,7 +118,7 @@ app.use(
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     status: 'OK',
-    appName: 'Kaam Saathi (काम साथी)',
+    appName: 'Kaam Manch (काम मंची)',
     timestamp: new Date().toISOString()
   });
 });
@@ -187,7 +187,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log('');
   console.log('========================================');
-  console.log('🚀 Kaam Saathi Backend API Server');
+  console.log('🚀 Kaam Manch Backend API Server');
   console.log('========================================');
   console.log(`📍 Port: ${PORT}`);
   console.log('');

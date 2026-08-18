@@ -52,9 +52,9 @@ const fallbackReply = (message, context) => {
       : 'Worker search me "Aaj Available" status ko priority dena useful hai.';
   }
   if (/login|otp|password|register|id/.test(text)) {
-    return 'Login/registration ke liye mobile number dijiye, OTP verify kijiye aur phir Kaam Saathi ka dashboard use kijiye. WhatsApp se ID banane ke liye Home par "WhatsApp se ID banaye" option bhi hai.';
+    return 'Login/registration ke liye mobile number dijiye, OTP verify kijiye aur phir Kaam Manch ka dashboard use kijiye. WhatsApp se ID banane ke liye Home par "WhatsApp se ID banaye" option bhi hai.';
   }
-  return 'Bilkul 👍 Main Kaam Saathi AI hoon. Aap Hinglish me pooch sakte ho—worker dhoondhna, KYC, availability, registration, dashboard ya app use karne ke baare me.';
+  return 'Bilkul 👍 Main Kaam Manch AI hoon. Aap Hinglish me pooch sakte ho—worker dhoondhna, KYC, availability, registration, dashboard ya app use karne ke baare me.';
 };
 
 const callAiProvider = async (message, history, context) => {
@@ -68,7 +68,7 @@ const callAiProvider = async (message, history, context) => {
 
   const provider = String(process.env.AI_PROVIDER || 'openai').toLowerCase();
   const model = process.env.AI_MODEL || (provider === 'gemini' ? 'gemini-2.5-flash' : 'gpt-4o-mini');
-  const system = `You are Kaam Saathi AI assistant for an Indian hyperlocal worker marketplace.
+  const system = `You are Kaam Manch AI assistant for an Indian hyperlocal worker marketplace.
 Always reply naturally in simple Hinglish (Hindi in Devanagari mixed with easy English), unless the user explicitly asks for another language.
 Keep replies concise and practical for low-literacy users. Use bullets when helpful.
 Never claim to have performed an action unless the app actually provides that action.

@@ -1,7 +1,7 @@
 {
-  "name": "kaam-saathi-server",
+  "name": "kaam-manch-server",
   "version": "1.0.0",
-  "description": "Backend API for Kaam Saathi marketplace",
+  "description": "Backend API for Kaam Manch marketplace",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

@@ -7,7 +7,7 @@ export default function IvrSimulator() {
   const [inCall, setInCall] = useState(false);
   const [phone, setPhone] = useState('+919876543210');
   const [currentStep, setCurrentStep] = useState('WELCOME');
-  const [promptText, setPromptText] = useState('काम साथी IVR कॉल शुरू करने के लिए डायल बटन दबाएं।');
+  const [promptText, setPromptText] = useState('काम मंची IVR कॉल शुरू करने के लिए डायल बटन दबाएं।');
   const [sessionData, setSessionData] = useState({});
   const [textInput, setTextInput] = useState('');
   const [loading, setLoading] = useState(false);

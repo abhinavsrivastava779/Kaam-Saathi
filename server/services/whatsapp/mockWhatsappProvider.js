@@ -5,7 +5,7 @@ class MockWhatsappProvider {
       success: true,
       provider: 'mock',
       from,
-      reply: `नमस्ते! काम साथी में आपका स्वागत है। आपका संदेश "${text}" प्राप्त हुआ।`
+      reply: `नमस्ते! काम मंची में आपका स्वागत है। आपका संदेश "${text}" प्राप्त हुआ।`
     };
   }
 

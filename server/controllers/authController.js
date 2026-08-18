@@ -38,7 +38,7 @@ exports.sendOtp = async (req, res, next) => {
     // Always print the test OTP when explicitly enabled.
     // For MSG91 this is the OTP supplied to the SendOTP API.
     if (process.env.OTP_DEBUG === 'true') {
-      console.log(`\n🔐 [Kaam Saathi OTP] +91${phone} => ${otp}\n`);
+      console.log(`\n🔐 [Kaam Manch OTP] +91${phone} => ${otp}\n`);
     }
 
     await otpProvider.sendOtp(phone, otp);

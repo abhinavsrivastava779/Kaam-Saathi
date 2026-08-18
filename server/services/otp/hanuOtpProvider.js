@@ -66,6 +66,6 @@ module.exports = {
   sendOtp: request,
 
   // Hanu's API shown in the dashboard is a Send-OTP API. OTP verification
-  // is therefore handled by Kaam Saathi using the OTP stored in MongoDB.
+  // is therefore handled by Kaam Manch using the OTP stored in MongoDB.
   verifyOtp: async () => ({ success: true, provider: 'hanuotp-local-verify' })
 };
