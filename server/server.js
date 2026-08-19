@@ -142,6 +142,15 @@ app.use(
   require('./routes/employerRoutes')
 );
 
+// ========================================
+// FEEDBACK ROUTE
+// ========================================
+
+app.use(
+  '/api/feedback',
+  require('./routes/feedbackRoutes')
+);
+
 app.use(
   '/api/location',
   require('./routes/locationRoutes')
@@ -172,6 +181,7 @@ app.use(
   require('./routes/adminRoutes')
 );
 
+app.use('/api/reports', require('./routes/reportRoutes'));
 // ========================================
 // Error Handler
 // ========================================
